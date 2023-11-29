@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/archia" rel="stylesheet">
+
+</head>
+<body>
+    <div class="the_page">
+        <div class="upperheading">
+            <div class="university_branding">
+                    <div class="logo_container">
+                        <img src="img/thapar_logo.png" alt="tiet logo" class="tietlogo">
+                    </div>
+                    <div class="clg_name">
+                        <p>THAPAR INSTITUTE OF ENGINEERING & TECHNOLOGY</p>
+                    </div>
+            </div>
+            <div class="portal_name">
+                <p><span>STUDENT</span> WEBKIOSK</p>
+            </div>
+        </div>
+
+        <nav class="nav_bar">
+            <div class="dropdown">
+                <button class="dropbtn" id="23">Personal Details
+                    <img src="img/dropdown arrow.svg" alt="drop arrow" class="droparrow">
+                </button>
+                
+                <div class="dropdown-content">
+                    <a href="p_detail.html">Personal Detail</a>
+                    <a href="edit_info.html">Edit Info</a>
+                    <a href="bank_details.html">Bank Info</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Feedback
+                    <img src="img/dropdown arrow.svg" alt="drop arrow" class="drop arrow">
+                </button>
+                
+                <div class="dropdown-content">
+                    <a href="#">Enter Feedback</a>
+                    <a href="#">View Feedback</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fee Details
+                    <img src="img/dropdown arrow.svg" alt="drop arrow" class="drop arrow">
+                </button>
+                
+                <div class="dropdown-content">
+                    <a href="fee_payment.html">Fee Payment</a>
+                    <a href="fee_receipt.html">Fee Receipt</a>
+                    <a href="fee_status.html">Fee Status</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Academic Info
+                    <img src="img/dropdown arrow.svg" alt="drop arrow" class="drop arrow">
+                </button>
+                
+                <div class="dropdown-content">
+                    <a href="reg_sub.html">Subject Details</a>
+                    <a href="acad_doc_list.html">Academic Document Status</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Exam Info
+                    <img src="img/dropdown arrow.svg" alt="drop arrow" class="drop arrow">
+                </button>
+                
+                <div class="dropdown-content">
+                    <a href="#">Datesheet</a>
+                    <a href="cgpa_report.html">View SGPA/CGPA</a>
+                    <a href="#">Exam Grades</a>
+                    <a href="marks.html">Exam Marks</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Complaints
+                    <img src="img/dropdown arrow.svg" alt="drop arrow" class="drop arrow">
+                </button>
+                
+                <div class="dropdown-content">
+                    <a href="file_complaint.html">File a Complaint</a>
+                    <a href="#">View Complaint Status</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="personal_details">
+            <div class="d_heading1">
+                <p>CHANGE STUDENT INFORMATION</p>
+            </div>
+        </div>
+
+        <div class="contact_container">
+            <div class="personal_details">
+                <div class="d_heading1" >
+                    <p id="2">Student Contact Details (Current)</p>
+                </div>
+                <div class="sub_details">
+                    <div class="details1">
+                        <p>Mobile</p>
+                        <div class="underline"></div>
+                        <p>Telephone </p>
+                        <div class="underline"></div>
+                        <p>E-Mail</p>
+                        <div class="underline"></div>
+                        <p></p>
+
+                    </div>
+                    <div class="details2">
+                        <p>6564445236</p>
+                        <p>8557076686</p>
+                        <p>bjogi1_be22@iit.edu</p>
+                        <p>bhupendrajogi17@gmail.com</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="personal_details">
+                <div class="d_heading1" >
+                    <p id="2">Update Details</p>
+                </div>
+
+                <div class="inp_container">
+                    <div class="field_container" >
+                        <div class="entryarea">
+                            <input type="number" required placeholder="Mobile">
+                        </div>
+                    </div>
+
+                    <div class="field_container" id="phn">
+                        <div class="entryarea" >
+                            <input type="number" id="std" required placeholder="STD Code">
+                        </div>
+
+                        <div class="entryarea">
+                            <input type="number" required placeholder="Phone no">
+                        </div>
+
+                    </div>
+        
+                    <div class="field_container" >
+                        <div class="entryarea">
+                            <input type="email" required placeholder="E-Mail"> 
+                        </div>
+                    </div>
+                    
+                    <button class="login_btn" id="normal">
+                        <p>SUBMIT</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="nav_bar"></nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>

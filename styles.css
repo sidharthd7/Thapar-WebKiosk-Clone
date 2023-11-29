@@ -21,6 +21,8 @@ body{
   /* justify-content: center; */
   /* align-items: center; */
   min-height: 100vh;
+  overflow-y: scroll;
+  margin: 0;
 
 }
 
@@ -32,6 +34,20 @@ body{
   justify-content: center ;
   margin-top: 60px;
 
+}
+
+
+/* Optional: Customize scrollbar appearance for webkit-based browsers */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 /*----------------------BASIC CSS------------------------->*/
 
@@ -347,13 +363,75 @@ input::placeholder{
   line-height: normal;
  }
 
- .nav_bar .pages img{
+ .nav_bar .dropdown img{
+  position: absolute;
   width: 14.238px;
   height: 6.538px;
+  margin: 16px 0 0 10px;
   flex-shrink: 0;
  }
 
+ /* .dropbtn img{
+  position: absolute;
+  padding: 0px 0 0 12px;
+ } */
 
+ 
+  /* .nav_bar {
+    font-family: poppins;
+  } */
+
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #045B86;
+    color: white;
+    padding: 16px 32px 16px 16px;
+    font-size: 16px;
+    font-family: poppins;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 172px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: poppins;
+    font-size: 18px;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn img {
+    /* background-color: #f5f5f5; */
+    rotate: 180deg;
+  }
 
  /* ---------------------------nav_bar-------------------- */
 
@@ -362,7 +440,7 @@ input::placeholder{
   .d_heading1{
     display: flex;
     margin-left: 60px;
-    margin-top: 73px;
+    margin-top: 48px;
   }
   
   /* #2 {
@@ -407,3 +485,139 @@ input::placeholder{
     gap: 190px;
   }
    /* ---------------------------personal details-------------------- */
+
+
+
+   .inp_container{
+    margin: 30px 0px 0px 60px;
+   }
+
+   #phn{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+   }
+   
+   /* #std{ */
+    /* padding-right: 20px ; */
+   /* } */
+   #normal{
+    font-size: 25px;
+   }
+
+   #normal p{
+    font-size: 25px;
+   }
+   .inp_container input{
+    font-size: 25px;
+    padding: 12px 80px 10px 20px;
+    margin: 0px 0px 10px 0px;
+   }
+
+
+   #bold_kro p{
+    font-weight: 600;
+   }
+
+   .table{
+    margin: 48px 0px 0px 60px;
+    font-family: poppins;
+    font-size: 25px;
+    border-collapse: collapse;
+   }
+
+   .thead-dark{
+    background-color: #045B86;
+    color: #FFF;
+    font-weight: 600;
+   }
+
+   td{
+    padding: 8px 120px 8px 60px;
+    text-align: center;
+
+   }
+
+   td span{
+    color: #045B86;
+   }
+
+   tbody{
+    background-color: #f5f5f5;
+   }
+
+   a{
+    color: #B11317;
+    text-decoration: underline;
+   }
+   
+
+
+   .colb{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0px 12px 0px;
+   }
+
+   .rowb{
+    display: flex;
+    flex-direction: row;
+    /* margin: 0 8px 0px 0px; */
+   }
+   
+   .rowb .field_container{
+    margin: 0 16px 0 0;
+   }
+
+#st_detail_box{
+  display: block;
+}
+
+  .imp_note{
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 48px 0 0 60px;
+  }
+
+  .imp_note .heading{
+    font-size: 30px;
+    font-weight: 700;
+    color: #045B86;
+  }
+
+  .imp_note ol{
+    margin-top: 16px;
+  }
+
+  #exam_code{
+    margin-top: 16px ;
+  }
+  
+  #submit_btn p{
+    font-size: 25px;
+    font-family: poppins;
+    /* font-weight: 400; */
+  }
+
+  #complaint{
+    margin-top: 16px;
+  }
+
+  #complaint input{
+    padding-right: 50%;
+    padding-bottom: 20vh;
+  }
+
+
+
+
+  /* <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <img src="img/dropdown arrow.svg" alt="drop arrow" class="drop arrow">
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> */
